@@ -1,0 +1,94 @@
+@media screen and (max-width: 1050px) {
+     :root {
+        --blue-color: #00296b;
+        --yellow-color: #ffd500;
+    }
+    body {
+        background-color: var(--yellow-color);
+        overflow-x: hidden;
+        padding: 0;
+        margin: 0;
+    }
+    a {
+        text-decoration: none;
+    }
+    nav {
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: var(--blue-color);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    nav h1 {
+        color: var(--yellow-color);
+        text-align: center;
+        margin: 10px;
+    }
+    .links ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        transition: 0.3s;
+    }
+    .links ul li {
+        text-align: left;
+        font-size: 22px;
+    }
+    nav a {
+        color: var(--yellow-color);
+    }
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 5px;
+        font-size: 36px;
+        text-decoration: none;
+    }
+    #openbut {
+        font-size: 30px;
+        color: var(--blue-color);
+        position: fixed;
+        right: 15px;
+        top: 0;
+    }
+    .links {
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        align-items: left;
+    }
+    /*Main*/
+    main {
+        transition: margin-left .5s;
+        padding: 5px;
+        color: var(--blue-color);
+    }
+    main ul {
+        list-style: none;
+        position: relative;
+        left: 15px;
+        padding: 0;
+    }
+    .main-text {
+        text-align: center;
+    }
+    main a {
+        color: var(--blue-color);
+    }
+    .mon-text {
+        font-size: 25px;
+    }
+    main li {
+        display: flex;
+        flex-direction: row;
+    }
+    .mon-num {
+        position: relative;
+        left: -15px;
+    }
+}
