@@ -85,25 +85,10 @@
     }
     .per-link {
         text-decoration: none;
-        display: inline-block;
-        position: relative;
         color: var(--blue-color);
     }
-    .per-link:after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: var(--blue-color);
-        transform-origin: bottom right;
-        transition: transform 0.25s ease-out;
-    }
-    .per-link:hover:after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
+    .per-link:hover {
+        text-decoration: underline;
     }
     #closebtn {
         display: none;
